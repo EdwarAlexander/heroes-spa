@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { CharactersByHero } from './CharactersByHero';
 
 
 export const HeroCard = ({
@@ -22,7 +24,13 @@ export const HeroCard = ({
                         <div className="card-body">
                             <h5 className="card-title">{ superhero }</h5>
                             <p className="card-text">{ alter_ego }</p>
-                            <p>{ characters }</p>
+                            <CharactersByHero alter_ego={alter_ego} characters={characters} />
+                            <p className="card-text">
+                                <small className="text-muted">{firts_appearance}</small>
+                            </p>
+                            <Link to={`/hero/${id}`}>
+                                Más..
+                            </Link>
                         </div>
                     </div>
                 </div>
