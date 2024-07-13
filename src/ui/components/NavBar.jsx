@@ -17,7 +17,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                Comics Online
             </Link>
 
             <div className="navbar-collapse">
